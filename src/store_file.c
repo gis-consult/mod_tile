@@ -188,9 +188,9 @@ static int file_metatile_write(struct storage_backend * store, const char *xmlco
 
 
     //Saves paths to metatiles in a file
-    //FILE *renderd_tiles = fopen("/home/renderer/renderd_tiles.txt","a+"); 
-    //fprintf(renderd_tiles , "%s\n", meta_path);
-    //fclose(renderd_tiles );
+    FILE *renderd_tiles = fopen("/home/renderer/renderd_tiles.txt","a+"); 
+    fprintf(renderd_tiles , "%s\n", meta_path);
+    fclose(renderd_tiles );
 	
 	
 	
